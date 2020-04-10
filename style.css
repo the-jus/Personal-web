@@ -18,7 +18,7 @@ body {
   padding: 30px;
   text-align: left;
   padding-left: 10%;
-  animation: mymove 3s 1;
+  animation: mymove 2s 1;
 }
 
 @keyframes mymove {
@@ -66,11 +66,11 @@ header nav {
   padding-inline-end: 45px;
 }
 
-header .highlight,
+/* header .highlight,
 header .current a {
   color: #b6b6b6;
   font-weight: bold;
-}
+} */
 
 header a:hover {
   color: #e4891d;
@@ -95,15 +95,16 @@ header a:hover {
   display: block;
   margin-left: 10%;
   margin-right: auto;
-  margin-top: 1%;
-  width: 50%;
-  border-radius: 0%;
+  margin-top: 0%;
+  width: 60%;
+  border-radius: 60%;
 }
 
 /* Slideshow container */
 .slideshow-container {
   position: relative;
-  background: rgb(148, 148, 148);
+  /* background: rgb(146, 146, 146); */
+  background-color: transparent;
 }
 
 /* Slides */
@@ -123,7 +124,7 @@ header a:hover {
   width: auto;
   margin-top: -30px;
   padding: 16px;
-  color: black;
+  color: rgb(255, 255, 255);
   font-weight: bold;
   font-size: 20px;
   border-radius: 0 3px 3px 0;
@@ -140,7 +141,7 @@ header a:hover {
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgb(0, 0, 0);
   color: white;
 }
 
@@ -148,7 +149,8 @@ header a:hover {
 .dot-container {
   text-align: center;
   padding: 20px;
-  background: rgb(146, 146, 146);
+  /* background: rgb(142, 142, 142); */
+  background-color: transparent;
 }
 
 /* The dots/bullets/indicators */
@@ -166,17 +168,18 @@ header a:hover {
 /* Add a background color to the active dot/circle */
 .active,
 .dot:hover {
-  background-color: #717171;
+  background-color: #5c5c5c;
 }
 
 /* Add an italic font style to all quotes */
 q {
   font-style: italic;
+  color: white;
 }
 
 /* Add a blue color to the author */
 .author {
-  color: rgb(0, 0, 0);
+  color: white;
 }
 /* 3d box */
 .coloumn h2 {
@@ -188,7 +191,7 @@ q {
   background-color: transparent;
   width: 100%;
   height: 200px;
-  border: 1px solid #f1f1f1;
+  border: 1px solid #000000;
   perspective: 1000px;
 }
 
@@ -197,7 +200,7 @@ q {
   width: 100%;
   height: 100%;
   text-align: center;
-  transition: transform 1s;
+  transition: transform 0.3s;
   transform-style: preserve-3d;
   transition-delay: 2s;
 }
@@ -216,7 +219,7 @@ q {
 }
 
 .flip-box-front {
-  background-color: rgb(143, 143, 143);
+  background-color: rgb(138, 138, 138);
   color: black;
 }
 
@@ -229,7 +232,7 @@ q {
 /* zoom effect */
 
 .zoom {
-  transition: transform 0.1s;
+  transition: transform 0.3s;
 }
 
 .zoom:hover {
@@ -244,7 +247,7 @@ q {
   top: 0;
   left: 0;
   right: 0;
-  height: 100%;
+  height: auto;
   margin: auto;
   width: 90vw;
 }
